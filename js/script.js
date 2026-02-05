@@ -189,16 +189,26 @@ var THEMEMASCOT = {};
 
 
 	// Banner Swiper five
-	if ($('.banner-swiper-five').length) {  
-		var swiper = new Swiper(".banner-swiper-five", {
-			slidesPerView: 1,
-			loop: true,
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	}
+if ($('.banner-swiper-five').length) {  
+	var swiper = new Swiper(".banner-swiper-five", {
+		slidesPerView: 1,
+		loop: true,
+
+		autoplay: {
+			delay: 3000, // time in ms (3000 = 3 sec)
+			disableOnInteraction: false, // keep autoplay after manual swipe
+			pauseOnMouseEnter: true, // pause on hover
+		},
+
+		speed: 800, // slide transition speed
+
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+
 
 	// Service Swiper
 	if ($('.service-swiper').length) {  

@@ -1260,7 +1260,12 @@ Scroll Top Two style
 }
 
 .bg-pattern-5 {
-  background-image: url(../images/icons/pattern-5.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/trophy/g1.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-pattern-6 {
@@ -1276,7 +1281,7 @@ Scroll Top Two style
 }
 
 .bg-pattern-9 {
-  background-image: url(../images/icons/pattern-9.jpg);
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../images/trophy/g1.png);
 }
 
 .bg-pattern-10 {
@@ -1292,7 +1297,7 @@ Scroll Top Two style
 }
 
 .bg-pattern-13 {
-  background-image: url(../images/icons/pattern-13.jpg);
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../images/trophy/g2.png);
 }
 
 .bg-pattern-14 {
@@ -11124,7 +11129,7 @@ display: -webkit-box;
 ***/
 .about-section-two {
   position: relative;
-  padding: 120px 0 70px;
+  padding: 180px 0 70px;
 }
 @media (max-width: 767.98px) {
   .about-section-two {
@@ -14002,7 +14007,7 @@ display: -webkit-box;
   }
 }
 .client-section-three .outer-box .marquee-box .marquee .client-block {
-  opacity: 20%;
+  /* opacity: 20%; */
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
@@ -18223,6 +18228,7 @@ background: linear-gradient(
   height: 100%;
   background-color: var(--theme-color-white);
 }
+
 @media (max-width: 1199.98px) {
   .benefit-block .inner-box:after {
     left: 75px;
@@ -18275,6 +18281,7 @@ background: linear-gradient(
   font-weight: 700;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  color: var(--theme-color1);
 }
 .benefit-block .inner-box .content-box .text {
   position: relative;
@@ -18283,6 +18290,7 @@ background: linear-gradient(
   margin-bottom: 0;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  color: #f6f6f6;
 }
 
 /*** 
@@ -26561,6 +26569,7 @@ Section Title
   position: relative;
   overflow: hidden;
   padding: 120px 0 150px;
+  background-color: #020a09;
 }
 @media (max-width: 991.98px) {
   .hzAccordion-section {
@@ -27930,7 +27939,7 @@ Section Title
 
 
 .parallax-quote {
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url('../images/trophy/2.png');
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url('../images/trophy/g1.png');
   height: 500px;
    background-attachment: fixed;
   background-position: center;
@@ -27963,7 +27972,7 @@ Section Title
 
 .premium-gallery {
   padding: 80px 16px;
-  /* background: linear-gradient(135deg, #0f172a, #111827); */
+  /* background: linear-gradient(135deg, #0f172a, #0E4F4A); */
 }
 
 .container {
@@ -28098,4 +28107,7 @@ Section Title
 @keyframes zoomIn {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+}
+.sec-title.light .sub-title{
+  color: var(--theme-color1);
 }
