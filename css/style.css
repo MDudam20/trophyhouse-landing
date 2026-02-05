@@ -1273,7 +1273,12 @@ Scroll Top Two style
 }
 
 .bg-pattern-7 {
-  background-image: url(../images/icons/pattern-7.png);
+  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(../images/trophy/g2.png);
+   height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-pattern-8 {
@@ -1322,6 +1327,9 @@ Scroll Top Two style
 
 .bg-pattern-19 {
   background-image: url(../images/trophy/banner1.png);
+}
+.bg-pattern-22 {
+  background-image: url(../images/trophy/banner2.png);
 }
 
 .bg-pattern-20 {
@@ -24842,8 +24850,10 @@ background: linear-gradient(
 
 /*=== Footer Bottom ===*/
 .footer-bottom {
-  position: relative;
-  z-index: 3;
+      position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 10px 0px;
 }
 .footer-bottom .inner-container {
   position: relative;
