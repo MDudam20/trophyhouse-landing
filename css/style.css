@@ -27,7 +27,7 @@
 25. Main Footer
 **********************************************/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Mona+Sans:ital,wght@0,200..900;1,200..900&amp;family=Outfit:wght@100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap");
 @import url("animate.css");
@@ -64,11 +64,11 @@
   --headings-color: var(--theme-color3);
   --link-color: var(--theme-color3);
   --link-hover-color: var(--theme-color3);
-  --body-font-family: "Outft", sans-serif;
+  --body-font-family:  "Poppins", sans-serif;
   --heading-font-family: "Outfit", sans-serif;
-  --style-font:  "PT Serif", serif;
-  --style-font2:  "PT Serif", serif;
-  --style-font3:  "PT Serif", serif;
+  --style-font:  "Cormorant Garamond", serif;
+  --style-font2:  "Cormorant Garamond", serif;
+  --style-font3:  "Cormorant Garamond", serif;
   --body-font-size: 16px;
   --body-line-height: 1.75;
   --body-font-weight: 400;
@@ -76,7 +76,7 @@
   --line-height-heading: 1.2em;
   --line-height-heading-small: 1.4em;
   --h1-font-size: 100px;
-  --h2-font-size: 50px;
+  --h2-font-size: 40px;
   --h3-font-size: 38px;
   --h4-font-size: 24px;
   --h5-font-size: 20px;
@@ -9871,7 +9871,7 @@ Main Header-style-three
     margin-bottom: 25px;
     line-height: 78px;
     color: #fff;
-    font-family: "PT Serif", serif;
+    font-family: "Cormorant Garamond", serif;
 
 }
 @media only screen and (max-width: 1699px) {
@@ -13965,7 +13965,7 @@ display: -webkit-box;
 }
 .client-section-three .outer-box .title-box .title {
   margin-bottom: 0;
-  color: var(--theme-color-black);
+  color: var(--theme-color-white);
   font-weight: var(--body-font-weight);
 }
 @media (max-width: 991.98px) {
@@ -17310,7 +17310,10 @@ background: linear-gradient(
 .counter-block .inner-box .text {
   position: relative;
   margin-bottom: 0;
-  line-height: 20px;
+  line-height: 23px;
+   font-family: "Cormorant Garamond", serif;
+   font-size: 20px;
+   font-weight: 700;
 }
 
 /*** 
@@ -26298,8 +26301,8 @@ Section Title
   display: block;
   font-size: var(--sec-title-font-size);
   color: var(--sec-title-color);
-    font-family: "PT Serif", serif;
-  font-weight: var(--sec-title-font-weight);
+   font-family: "Cormorant Garamond", serif;
+      font-weight: 900;
   margin-bottom: 0;
   z-index: 2;
 }
@@ -27949,27 +27952,30 @@ Section Title
 
 
 .parallax-quote {
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url('../images/trophy/g1.png');
-  height: 500px;
-   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/trophy/g1.png);
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 110px 20px 80px;
   
 }
 .quote-content h2 {
-   color: #ffffff;
-  font-size: 35px;
-  font-weight: 500;
-  max-width: 950px;
-  line-height: 1.45;
-  letter-spacing: 0.4px;
-  text-transform: none;
+       color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 100%;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    text-transform: none;
+    text-align: center;
+    padding: 30px 100px 0px;
+     font-family: "Cormorant Garamond", serif;
 }
 
 

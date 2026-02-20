@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="klyntec-premium-section">
+  <div class="klyntec-header">
+    <span class="badge">Why Choose Klyntec</span>
+    <h2>Powerful Performance. Trusted Cleaning Solutions.</h2>
+  </div>
+
+  <div class="klyntec-wrapper">
+
+
+    <div class="klyntec-side">
+
+      <div class="klyntec-point active" data-img="images/ff/1.png">
+        <div class="icon-circle">🧴</div>
+        <div>
+          <h4>Powerful Cleaning</h4>
+          <p>Breaks down tough stains, grease and dirt instantly.</p>
+        </div>
+      </div>
+
+      <div class="klyntec-point" data-img="images/ff/2.png">
+        <div class="icon-circle">🛡️</div>
+        <div>
+          <h4>Surface Safe</h4>
+          <p>Safe for tiles, marble, granite and metal finishes.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="klyntec-center">
+      <div class="image-glow"></div>
+      <img id="klyntec-main-image" src="images/ff/1.png" alt="Klyntec Product">
+    </div>
+
+    <div class="klyntec-side">
+
+      <div class="klyntec-point" data-img="images/ff/3.png">
+        <div class="icon-circle">🌿</div>
+        <div>
+          <h4>Long Lasting Freshness</h4>
+          <p>Leaves behind a clean and refreshing fragrance.</p>
+        </div>
+      </div>
+
+      <div class="klyntec-point" data-img="images/ff/4.png">
+        <div class="icon-circle">🚚</div>
+        <div>
+          <h4>Reliable Supply</h4>
+          <p>Consistent delivery for homes and commercial needs.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* SECTION BACKGROUND */
+.klyntec-premium-section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f3fbf8, #f1cebe);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.klyntec-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.klyntec-header .badge {
+  background: #d7f0e5;
+  color: #0f3d2e;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.klyntec-header h2 {
+  margin-top: 15px;
+  font-size: 40px;
+  color: #0f3d2e;
+}
+
+/* LAYOUT */
+.klyntec-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.klyntec-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.klyntec-center {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.klyntec-center img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #F26829;
+  padding: 18px;
+  background: radial-gradient(circle at center, #ffffff 60%, #f3fbf8 100%);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+/* Orange Glow Ring */
+.klyntec-center::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(242,104,41,0.35) 0%, transparent 65%);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+}
+
+
+.image-glow {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: radial-gradient(circle, rgba(30,125,77,0.25) 0%, transparent 70%);
+  top: 12%;
+  left: 12%;
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: 1;
+  border: 5px solid #F26829;
+      border-radius: 50%;
+}
+
+/* POINT CARDS */
+.klyntec-point {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.klyntec-point:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+}
+
+.icon-circle {
+  background: linear-gradient(135deg, #0e0e0e, #000000);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.klyntec-point h4 {
+  margin: 0;
+  font-size: 22px;
+  color: #0f3d2e;
+}
+
+.klyntec-point p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+
+.klyntec-point.active {
+  border: 1px solid #F26829;
+  background: #ffffff;
+  box-shadow: 0 15px 30px rgba(30,125,77,0.15);
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .klyntec-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .klyntec-side, .klyntec-center {
+    width: 100%;
+  }
+  .klyntec-header h2 {
+    font-size: 26px;
+  }
+}
+@media(max-width: 900px) {
+  .klyntec-center img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .klyntec-center::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const points = document.querySelectorAll(".klyntec-point");
+  const mainImage = document.getElementById("klyntec-main-image");
+
+  function activatePoint(point) {
+    const imgSrc = point.getAttribute("data-img");
+
+    mainImage.style.opacity = 0;
+    mainImage.style.transform = "scale(0.95)";
+
+    setTimeout(() => {
+      mainImage.src = imgSrc;
+      mainImage.style.opacity = 1;
+      mainImage.style.transform = "scale(1)";
+    }, 200);
+
+    points.forEach(p => p.classList.remove("active"));
+    point.classList.add("active");
+  }
+
+  points.forEach(point => {
+    point.addEventListener("click", () => activatePoint(point));
+    point.addEventListener("mouseenter", () => activatePoint(point));
+  });
+});
+</script>
+
+</body>
+</html>
