@@ -368,7 +368,7 @@ if ($('.banner-swiper-five').length) {
     effect: 'coverflow',
 
     coverflowEffect: {
-      rotate: 20,
+      rotate: 10,
       stretch: 0,
       depth: 100,
       modifier: 1.5,
@@ -389,8 +389,8 @@ if ($('.banner-swiper-five').length) {
     },
 
     breakpoints: {
-      1600: { slidesPerView: 5 },
-      1200: { slidesPerView: 4 },
+      1600: { slidesPerView: 4 },
+      1200: { slidesPerView: 3 },
       768: { slidesPerView: 2 },
       580: { slidesPerView: 2 },
       0: { slidesPerView: 1 }

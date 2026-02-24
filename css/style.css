@@ -1326,7 +1326,7 @@ Scroll Top Two style
 }
 
 .bg-pattern-19 {
-  background-image: url(../images/trophy/banner1.png);
+  background-image: url(../images/trophy/b3.jpeg);
 }
 .bg-pattern-22 {
   background-image: url(../images/trophy/banner2.png);
@@ -1682,7 +1682,7 @@ Scroll Top Two style
   z-index: 999999;
   background-color: #ffffff;
 }
-.preloader:before {
+/* .preloader:before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1699,15 +1699,15 @@ Scroll Top Two style
   text-transform: uppercase;
   -webkit-transition: none;
   transition: none;
-}
+} */
 .preloader .loader {
   display: block;
   position: relative;
   left: 50%;
   top: 50%;
-  width: 100px;
-  height: 100px;
-  margin: -75px 0 0 -50px;
+  width: 200px;
+  height: 200px;
+  margin:-100px 0 0 -100px;
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #9370db;
@@ -1740,7 +1740,25 @@ Scroll Top Two style
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
+/* Center Logo */
+.loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 
+  /* Fade Animation */
+  animation: logoFade 2s ease-in-out infinite;
+}
+
+/* Fade Keyframes */
+@keyframes logoFade {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -9903,11 +9921,12 @@ Main Header-style-three
   }
 }
 .banner-section-five .outer-box .content-column .inner-column .text {
-  position: relative;
-  font-weight: 600;
-  max-width: 610px;
-  margin-bottom: 41px;
-  color:#000;
+ position: relative;
+    font-weight: 600;
+    max-width: 610px;
+    margin-bottom: 41px;
+    color: #e6e0fa;
+    font-size: 30px;
 }
 @media (max-width: 1199.98px) {
   .banner-section-five .outer-box .content-column .inner-column .text {
@@ -15810,6 +15829,9 @@ background: linear-gradient(
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+.service-block .inner-box .image-box .image img{
+  height: 400px;
+}
 .service-block .inner-box:hover:before {
   -webkit-transform: scaleX(2) scaleY(1);
           transform: scaleX(2) scaleY(1);
@@ -15817,6 +15839,7 @@ background: linear-gradient(
 .service-block .inner-box:hover .image-box .image img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+
 }
 .service-block .inner-box:hover .image-box .icon-box:before {
   -webkit-transform: scale(1);
