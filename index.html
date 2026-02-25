@@ -14,6 +14,7 @@
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -73,8 +74,9 @@
               <ul class="navigation onepage-nav">
                 <li class="current"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#collection">Collection</a></li>
                 <li><a href="#project">Project</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -89,7 +91,7 @@
               <a href="" class="theme-btn btn-style-one"><span class="btn-title">Get in Touch</span></a>
             </div>
 
-            <div class="ui-btn-box">
+            <!-- <div class="ui-btn-box">
               <button class="ui-btn search-btn">
                 <span class="icon lnr lnr-icon-search"></span>
               </button>
@@ -97,7 +99,7 @@
               <button class="ui-btn account-btn">
                 <span class="icon lnr lnr-icon-user"></span>
               </button>
-            </div>
+            </div> -->
 
             <!-- Mobile Nav toggler -->
             <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
@@ -275,7 +277,7 @@
     <!-- End Banner Section -->
 
     <!-- About Section -->
-    <section class="about-section-seven">
+    <section class="about-section-seven" id="about">
       <div class="shape-3"></div>
       <div class="auto-container">
         <div class="row">
@@ -587,7 +589,7 @@
 
 
     <!-- Project Section -->
-    <section class="project-section">
+    <section class="project-section" id="collection">
       <div class="bg bg-pattern-9"></div>
       <div class="sec-title light text-center">
         <div class="sub-title">Our Awards</div>
@@ -758,7 +760,7 @@
           <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="300ms">
             <div class="inner-column">
               <div class="image-box">
-                <video autoplay muted loop playsinline class="hero-bg-video" style="width: 650px;">
+                <video autoplay muted loop playsinline class="hero-bg-video" >
         <source src="images/trophy/IMG_3807.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -778,7 +780,7 @@
    
 
     <!-- Horizontal accordion area start here -->
-    <section class="hzAccordion-section">
+    <section class="hzAccordion-section" id="project">
       <div class="shape-2"></div>
       <div class="shape-15"></div>
       <div class="shape-4"></div>
@@ -928,7 +930,7 @@
 
 
     <!-- gallery section start  -->
-    <section class="premium-gallery">
+    <section class="premium-gallery" id="gallery">
       <div class="container">
         <div class="sec-title  text-center">
           <div class="sub-title">Our Awards</div>
@@ -1009,7 +1011,7 @@
 
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="outer-box">
         <div class="bg bg-pattern-13"></div>
         <div class="shape-11"></div>
@@ -1219,6 +1221,30 @@
     </footer>
     <!-- End Main Footer -->
 
+
+<!-- Floating Contact + Scroll Top -->
+<div class="floating-contact">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/919999999999" 
+     target="_blank" 
+     class="float-btn whatsapp">
+     <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:your@email.com" 
+     class="float-btn email">
+     <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- Scroll To Top -->
+  <button class="float-btn scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+</div>
+
   </div>
   <script>
   const galleryItems = document.querySelectorAll(".gallery-item");
@@ -1298,6 +1324,24 @@
     });
   });
 
+</script>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  scrollBtn.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 </script>
   
   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
