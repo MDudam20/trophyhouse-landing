@@ -221,7 +221,7 @@ if ($('.banner-swiper-five').length) {
 				prevEl: ".swiper-button-prev",
 			},
 			breakpoints: {
-				1200: {
+				1100: {
 					slidesPerView: 3,
 				},
 				768: {
