@@ -28011,7 +28011,7 @@ Section Title
 
 .premium-gallery {
   padding: 80px 16px;
-  background: linear-gradient(135deg, #0f172a, #06221f);
+  /* background: linear-gradient(135deg, #0f172a, #06221f); */
 }
 
 .container {
@@ -28021,7 +28021,7 @@ Section Title
 
 .gallery-title {
   text-align: center;
-  color: #fff;
+  color: #000000;
   font-size: clamp(24px, 4vw, 36px);
   font-weight: 700;
   margin-bottom: 40px;
