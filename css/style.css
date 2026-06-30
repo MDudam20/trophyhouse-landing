@@ -9834,7 +9834,7 @@ Main Header-style-three
 }
 @media (max-width: 767.98px) {
   .banner-section-five .outer-box .inner-box {
-    padding: 140px 10px 0 15px;
+    padding: 180px 10px 0 15px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -9859,7 +9859,7 @@ Main Header-style-three
 }
 @media (max-width: 1199.98px) {
   .banner-section-five .outer-box .content-column .inner-column {
-    padding-top: 10px;
+    padding-top: 100px;
     margin-right: 0;
   }
 }
@@ -9923,9 +9923,15 @@ Main Header-style-three
 }
 @media (max-width: 575.98px) {
   .banner-section-five .outer-box .content-column .inner-column .title {
-    font-size: 34px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 60px;
   }
+  .banner-section-five .outer-box .content-column .inner-column .text {
+        max-width: 100%;
+        font-size: 20px !important;
+        padding-top: 0px;
+    }
+
 }
 .banner-section-five .outer-box .content-column .inner-column .text {
  position: relative;
@@ -17125,6 +17131,11 @@ background: linear-gradient(
     margin: 0;
   }
 }
+@media only screen and (max-width: 1099px) {
+  .funfact-section {
+    margin: 0 50px;
+  }
+}
 .funfact-section .bg-pattern-3 {
   border-radius: 200px 200px 20px 20px;
   height: 1212px;
@@ -20319,7 +20330,8 @@ background: linear-gradient(
 }
 
 .team-block2 {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+
 }
 @media (max-width: 575.98px) {
   .team-block2 {
@@ -20328,6 +20340,10 @@ background: linear-gradient(
 }
 .team-block2 .inner-box {
   position: relative;
+      border: 2px solid green;
+    /* border-bottom: none; */
+    border-radius: 20px;
+    padding: 8px;
 }
 .team-block2 .inner-box:hover:before {
   -webkit-transform: scale(1);
@@ -20340,14 +20356,15 @@ background: linear-gradient(
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
-  -webkit-mask-image: url(../images/mask/team3-mask.png);
-          mask-image: url(../images/mask/team3-mask.png);
+  /* -webkit-mask-image: url(../images/mask/team3-mask.png);
+          mask-image: url(../images/mask/team3-mask.png); */
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-mask-position: center;
           mask-position: center;
+          border-radius: 20px;
 }
 @media (max-width: 991.98px) {
   .team-block2 .inner-box .image-box .image {
@@ -20469,18 +20486,18 @@ background: linear-gradient(
   background-color: var(--theme-color3);
 }
 .team-block2 .inner-box .content-box {
-  position: absolute;
-  text-align: center;
-  width: 290px;
-  padding: 24px 0 27px;
-  border-radius: 50px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -55px;
-  background-color: var(--theme-color-white);
-  -webkit-box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1019607843);
-          box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1019607843);
+    position: absolute;
+    text-align: center;
+    width: 311px;
+    padding: 26px 0 22px;
+    border-radius: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -55px;
+    background-color: #041816;
+    -webkit-box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1019607843);
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1019607843);
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .team-block2 .inner-box .content-box {
@@ -20497,7 +20514,10 @@ background: linear-gradient(
 }
 .team-block2 .inner-box .content-box .name {
   position: relative;
-  margin-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: gold;
 }
 .team-block2 .inner-box .content-box .name a:hover {
   color: var(--theme-color2);
@@ -27192,7 +27212,7 @@ Section Title
   height: 100%;
   width: 100%;
   height: 515px;
-  background-image: url(../images/icons/breadcume-be.png);
+  background-image: url(../images/trophy/1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27205,7 +27225,7 @@ Section Title
 .breadcume-section .outer-box {
   position: relative;
   overflow: hidden;
-  background-image: url(../images/resource/breadcume.jpg);
+  background-image: url(../images/trophy/2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28281,4 +28301,243 @@ padding: 0px 10px 0px;
     width: 50px;
     height: 50px;
   }
+}
+.icon-box-img{
+ 
+   border: 3px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+
+.projects{
+  position: relative;
+}
+
+
+.project-card{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+
+align-items:center;
+
+background:#fff;
+
+border:1px solid #eee;
+
+border-radius:25px;
+
+padding:40px;
+
+margin-bottom:60px;
+
+transition:.4s;
+}
+
+.project-card:hover{
+
+box-shadow:0 30px 60px rgba(0,0,0,.08);
+
+transform:translateY(-8px);
+
+}
+
+.reverse .project-image{
+
+order:2;
+
+}
+
+.reverse .project-content{
+
+order:1;
+
+}
+
+.project-image{
+
+overflow:hidden;
+
+border-radius:18px;
+
+}
+
+.project-image img{
+
+width:100%;
+
+height:100%;
+
+display:block;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.project-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.project-content small{
+
+color:#B68A35;
+
+text-transform:uppercase;
+
+font-weight:600;
+
+letter-spacing:2px;
+
+}
+
+.project-content h3{
+
+font-size:38px;
+
+margin:15px 0;
+
+}
+
+.project-content p{
+
+color:#666;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.project-content ul{
+
+list-style:none;
+
+margin-bottom:35px;
+
+}
+
+.project-content li{
+
+padding:10px 0;
+
+border-bottom:1px solid #eee;
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:15px;
+
+}
+
+.project-content strong{
+
+font-weight:600;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 34px;
+
+background:#C69B4B;
+
+color:#fff;
+
+border-radius:50px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#000;
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.project-card{
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+padding:30px;
+
+}
+
+.reverse .project-image,
+.reverse .project-content{
+
+order:unset;
+
+}
+
+.project-content h3{
+
+font-size:30px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+.projects{
+
+padding:60px 0;
+
+}
+
+.heading h2{
+
+font-size:32px;
+
+}
+
+.project-card{
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+.project-content h3{
+
+font-size:26px;
+
+}
+
+.project-content li{
+
+font-size:14px;
+
+}
+
+.btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
 }
