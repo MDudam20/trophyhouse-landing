@@ -28541,3 +28541,176 @@ text-align:center;
 }
 
 }
+.process-section{
+    padding:100px 0;
+    background:#faf9f7;
+    overflow:hidden;
+}
+
+.process-section .container{
+    max-width:1400px;
+    margin:auto;
+    padding:0 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:#C89A2B;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.section-title h2{
+    font-size:48px;
+    margin:15px 0;
+    font-weight:600;
+    color:#222;
+}
+
+.section-title p{
+    color:#777;
+    max-width:650px;
+    margin:auto;
+}
+
+.process-wrapper{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:10px;
+    position:relative;
+}
+
+
+
+.process-card{
+    width:240px;
+    background:white;
+    border-radius:22px;
+    padding:55px 28px 40px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    transition:.4s;
+    z-index:2;
+    height: 400px;
+}
+
+.process-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+}
+
+.step{
+    position:absolute;
+    top:-22px;
+    left:50%;
+    transform:translateX(-50%);
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#041816;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    font-size:18px;
+    box-shadow:0 10px 20px rgba(197,146,21,.35);
+}
+
+.icon-1{
+    width:88px;
+    height:88px;
+    margin:auto;
+    border-radius:50%;
+    background:#f8f5ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:28px;
+}
+
+.icon-1 i{
+    font-size:34px;
+    color:#8b6b1b;
+}
+
+.process-card h4{
+    margin-bottom:18px;
+    font-size:24px;
+    color:#222;
+}
+
+.process-card p{
+    font-size:15px;
+    color:#666;
+    line-height:1.8;
+}
+
+.arrow{
+    margin-top:130px;
+    color:#c99725;
+    font-size:20px;
+}
+
+
+
+@media(max-width:1200px){
+
+.process-wrapper{
+flex-wrap:wrap;
+gap:40px;
+}
+
+.arrow{
+display:none;
+}
+
+
+
+}
+
+@media(max-width:768px){
+
+.process-section{
+padding:70px 0;
+}
+
+.section-title h2{
+font-size:34px;
+}
+
+.process-card{
+width:100%;
+max-width:380px;
+margin:auto;
+}
+
+}
+
+@media(max-width:480px){
+
+.section-title h2{
+font-size:28px;
+}
+
+.process-card{
+padding:45px 22px;
+}
+
+.icon-1{
+width:75px;
+height:75px;
+}
+
+.icon-1 i{
+font-size:30px;
+}
+
+}
